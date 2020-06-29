@@ -17,6 +17,12 @@
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+	<properties>
+  			<sonar.projectKey>ravindersravi_spring-boot-docker</sonar.projectKey>
+  			<sonar.organization>ravinder</sonar.organization>
+ 		 	<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  			<sonar.login>23409def35396db0be355e530bbd1f38a86e36fc</sonar.login>
+	</properties>
 
 	<dependencies>
 		<dependency>
@@ -33,6 +39,7 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
