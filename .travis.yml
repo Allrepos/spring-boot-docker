@@ -1,0 +1,9 @@
+addons:
+  sonarcloud:
+    organization: "ravis"
+    token:
+      secure: "42bede9bfdbf4bccd71fcd60069d4916bad30a0f" # encrypted value of your token
+
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=ravindersravi_spring-boot-docker
